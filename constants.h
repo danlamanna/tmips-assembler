@@ -1,0 +1,48 @@
+/**
+ * Dan LaManna
+ * dl954588
+ * dlamanna@albany.edu
+ **/
+
+// argc/argv
+#define INFILE_ARG 1
+#define REQUIRED_ARGC 2
+
+#define INSTRUCTIONS_MAX_LEN 65535
+#define MIN_ERROR_LENGTH 5
+#define MIN_SYMTABLE_LENGTH 5
+
+#define FILE_EXT_LEN 4
+
+#define TWO_ARGS 2
+#define THREE_ARGS 3
+
+#define MAX_R_FORMAT_OPCODE 17
+#define MAX_I_FORMAT_OPCODE 25
+
+#define REALLOC_MULTIPLIER 2
+
+#define MAX_LINE_LENGTH 80
+
+// Directives/Pseudo-opcodes
+#define DATA_SEGMENT ".data"
+#define TEXT_SEGMENT ".text"
+#define WORD_DIRECTIVE ".word"
+#define RESW_DIRECTIVE ".resw"
+
+#define NUM_OPCODES 36
+
+// Bitmasking Shifting
+#define R_INSTRUCTION_OPCODE_SHIFT 25
+#define R_INSTRUCTION_RS1_SHIFT 20
+#define R_INSTRUCTION_RS2_SHIFT 15
+#define R_INSTRUCTION_RT_SHIFT 10
+#define R_INSTRUCTION_SA_SHIFT 5
+
+#define J_INSTRUCTION_OPCODE_SHIFT 25
+#define J_INSTRUCTION_RS_SHIFT 20
+#define J_INSTRUCTION_RT_SHIFT 15
+
+#define I_INSTRUCTION_OPCODE_SHIFT 25
+#define I_INSTRUCTION_RS_SHIFT 20
+#define I_INSTRUCTION_RT_SHIFT 15
